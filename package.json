@@ -1,0 +1,53 @@
+{
+  "name": "relay",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "imports": {
+    "#common/*": "./src/shared/common/src/*.ts"
+  },
+  "scripts": {
+    "start": "vite build && node dist/relay.js",
+    "build": "vite build",
+    "lint": "prettier --check . && eslint . && tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "effect": "4.1.1",
+    "ws": "8.23.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
+    "@eslint/js": "10.0.1",
+    "@semantic-release/git": "11.0.1",
+    "@types/node": "24.19.2",
+    "@types/ws": "8.18.2",
+    "@vitest/coverage-v8": "5.0.5",
+    "eslint": "10.14.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-config-recommended": "4.1.0",
+    "eslint-plugin-prettier": "5.5.7",
+    "globals": "17.13.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.6.0",
+    "prettier": "3.9.10",
+    "semantic-release": "25.0.9",
+    "semantic-release-gha-output": "1.1.6",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "overrides": {
+    "conventional-changelog-conventionalcommits": ">=8.0.0",
+    "conventional-changelog-writer": ">=9.0.0",
+    "glob": ">=10.5.0"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "npm@11.11.0"
+}
