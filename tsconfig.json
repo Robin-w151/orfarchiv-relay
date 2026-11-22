@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Basic Options
+    "target": "ESNext",
+    "module": "ESNext",
+
+    // Module Resolution Options
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+
+    // Type Acquisition
+    "types": ["node"],
+
+    // Interoperability Options
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    // Strict Type-Checking Options
+    "strict": true,
+
+    // Advanced Options
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Output Options
+    "outDir": "./dist",
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "vite.config.ts", "vitest.config.ts"],
+  "exclude": ["node_modules", "dist", "src/shared/common"]
+}
